@@ -1,1 +1,0 @@
-# Example Geb, Spock, Groovy and Gradle Project

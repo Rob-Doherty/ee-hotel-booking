@@ -8,19 +8,21 @@ waiting {
 
 environments {
 
-    // run via “./gradlew chromeTest”
-    chrome {
-        driver = { new ChromeDriver() }
-    }
-
-    // run via “./gradlew chromeHeadlessTest”
-    chromeHeadless {
-        driver = {
-            ChromeOptions o = new ChromeOptions()
-            o.addArguments('headless')
-            new ChromeDriver(o)
-        }
-    }
+//    Crossbrowser work in progress to be extended in future:
+//
+//    // run via “./gradlew chromeTest”
+//    chrome {
+//        driver = { new ChromeDriver() }
+//    }
+//
+//    // run via “./gradlew chromeHeadlessTest”
+//    chromeHeadless {
+//        driver = {
+//            ChromeOptions o = new ChromeOptions()
+//            o.addArguments('headless')
+//            new ChromeDriver(o)
+//        }
+//    }
 
     // run via “./gradlew firefoxTest”
     firefox {
@@ -33,4 +35,4 @@ environments {
 
 // To run the tests with all browsers just run “./gradlew test”
 
-baseUrl = "http://www.whiteboxitsolutions.com"
+baseUrl = "http://hotel-test.equalexperts.io"
